@@ -17,5 +17,6 @@ public class Login {
     public String saleManagerPassword = "1234567";
 
     public String workerLogin = "worker";
-    public String workerPassword = "12345678";
+    public String workerPassword = "egor123";
+
 }

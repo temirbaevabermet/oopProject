@@ -1,9 +1,6 @@
 package typeOfAccount;
 import LoginPassword.Login;
-import users.Director;
-import users.Manager;
-import users.Marketing;
-import users.SaleManager;
+import users.*;
 
 import java.util.Scanner;
 public class Account {
@@ -74,11 +71,15 @@ public class Account {
             }
         }
         else if(typeOfAccount.equals(login.workerLogin)){
+            Worker worker = new Worker();
             String passwordRequest = "Please enter your password: ";
             System.out.print(passwordRequest);
             String password5 = scanner.next();
             if(password5.equals(login.workerPassword)){
-                System.out.println("Hello");
+                System.out.println(worker.greetings);
+                worker.menu();
+                String choice = worker.getChoice();
+                System.out.println(choice);
             }
             else {
                 System.out.println("Sorry, but password entered incorrectly, please try again!");

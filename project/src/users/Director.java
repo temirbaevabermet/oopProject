@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Director {
     Scanner scanner = new Scanner(System.in);
+    int workerSalary = 30000;
     public String greetings = "Greetings dear Director!\n" +
             "Please dial the menu number to work with the program, if you are finished, then dial 8:";
     public void menu() {
@@ -95,6 +96,10 @@ public class Director {
             String nameOfEmployee = scanner.next();
             System.out.print("Enter the amount of the salary bonus:");
             String bonusSalary = scanner.next();
+            if(nameOfEmployee.equals("Egor")){
+                int increaseSalary = Integer.valueOf(bonusSalary);
+                workerSalary = workerSalary+increaseSalary;
+            }
             choice = "The surcharge has been successfully made! Current salary for this employee after bonus:";
         }
         else if(getchoice.equals("7")){
@@ -102,6 +107,10 @@ public class Director {
             String nameOfEmployee = scanner.next();
             System.out.print("Enter the amount of the salary reduction:");
             String reducedSalary = scanner.next();
+            if(nameOfEmployee.equals("Egor")){
+                int reduceSalary = Integer.valueOf(reducedSalary);
+                workerSalary = workerSalary-reduceSalary;
+            }
             choice = "Salary reduction successfully completed! Current salary for this employee after salary cut:";
         }
         else if(getchoice.equals("8")){
