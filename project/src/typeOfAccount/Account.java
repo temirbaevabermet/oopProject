@@ -3,6 +3,7 @@ import LoginPassword.Login;
 import users.Director;
 import users.Manager;
 import users.Marketing;
+import users.SaleManager;
 
 import java.util.Scanner;
 public class Account {
@@ -58,11 +59,15 @@ public class Account {
             }
         }
         else if(typeOfAccount.equals(login.saleManagerLogin)){
+            SaleManager saleManager = new SaleManager();
             String passwordRequest = "Please enter your password: ";
             System.out.print(passwordRequest);
             String password4 = scanner.next();
             if(password4.equals(login.saleManagerPassword)){
-                System.out.println("Hello");
+                System.out.println(saleManager.greetings);
+                saleManager.menu();
+                String choice = saleManager.getChoice();
+                System.out.println(choice);
             }
             else {
                 System.out.println("Sorry, but password entered incorrectly, please try again!");

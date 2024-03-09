@@ -85,7 +85,7 @@ public class Director {
             Marketing marketing = new Marketing();
             int totalBudgetMarketing = marketing.marketBudget;
             String marketingbudget = String.valueOf(totalBudgetMarketing);
-            choice = "Current funds for marketing:"+marketingbudget+" soms;";
+            choice = "Current funds for marketing:"+marketingbudget+" som;";
         }
         else if(getchoice.equals("5")){
             choice = "Total budget required for the salary: 300k som;";

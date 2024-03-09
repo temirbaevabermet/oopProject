@@ -48,7 +48,7 @@ public class Marketing {
             choice = "Internet advertising(budget): 20k som;";
         }
         else if(getchoice.equals("3")){
-            choice = "Total budget for marketing: 150k som;";
+            choice = "Total budget for marketing:"+marketBudget+" som;";
         }
         else if(getchoice.equals("4.1")){
             String expenseRequest = "Enter the amount of expense you want to spend from your budget:";
