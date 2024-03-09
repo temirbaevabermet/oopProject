@@ -82,7 +82,10 @@ public class Director {
             choice = "Internet advertising(budget): 20k som;";
         }
         else if(getchoice.equals("4")){
-            choice = "Current funds for marketing: 150k som;";
+            Marketing marketing = new Marketing();
+            int totalBudgetMarketing = marketing.marketBudget;
+            String marketingbudget = String.valueOf(totalBudgetMarketing);
+            choice = "Current funds for marketing:"+marketingbudget+" soms;";
         }
         else if(getchoice.equals("5")){
             choice = "Total budget required for the salary: 300k som;";

@@ -2,6 +2,7 @@ package typeOfAccount;
 import LoginPassword.Login;
 import users.Director;
 import users.Manager;
+import users.Marketing;
 
 import java.util.Scanner;
 public class Account {
@@ -42,11 +43,15 @@ public class Account {
             }
         }
         else if(typeOfAccount.equals(login.marketingLogin)){
+            Marketing marketing = new Marketing();
             String passwordRequest = "Please enter your password: ";
             System.out.print(passwordRequest);
             String password3 = scanner.next();
             if(password3.equals(login.marketingPassword)){
-                System.out.println("Hello");
+                System.out.println(marketing.greetings);
+                marketing.menu();
+                String choice = marketing.getChoice();
+                System.out.println(choice);
             }
             else {
                 System.out.println("Sorry, but password entered incorrectly, please try again!");
