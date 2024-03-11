@@ -1,9 +1,11 @@
 package users;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Worker {
     Scanner scanner = new Scanner(System.in);
+    String doneTasks = "null";
     public String greetings = "Greetings dear, Employee Egor!\n" +
             "Please dial the menu number to work with the program, if you are finished, then dial 5:";
     public void menu(){
@@ -18,20 +20,20 @@ public class Worker {
         String numberRequest = "Please dial the menu number to work with the program:";
         System.out.print(numberRequest);
         String getchoice = scanner.next();
+       WorkerList workerList = new WorkerList();
         if(getchoice.equals("1")){
-            choice = "1) Print out a list of customer service areas;\n" +
-                    "2) Translate the main speech for the consul from America;\n" +
-                    "3) Show the building to new employees;\n" +
-                    "4) Print monthly report;";
+            String works = workerList.works();
+            choice = works;
         }
         else if(getchoice.equals("2")){
             System.out.print("Please write down the task you are going to do:");
             String task = scanner.next();
-            choice = "This task will be crossed off the to-do list";
+            doneTasks = task;
+            choice = "This task will be crossed off the to-do list;";
         }
         else if(getchoice.equals("3")){
-            choice = "1) Sort documents in alphabetical order;\n" +
-                    "2) Accept resumes of new employees;";
+            String doneworks = workerList.doneWorks();
+            choice = doneworks;
         }
         else if(getchoice.equals("4")){
             Director director = new Director();

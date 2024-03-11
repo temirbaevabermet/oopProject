@@ -100,7 +100,7 @@ public class Director {
                 int increaseSalary = Integer.valueOf(bonusSalary);
                 workerSalary = workerSalary+increaseSalary;
             }
-            choice = "The surcharge has been successfully made! Current salary for this employee after bonus:";
+            choice = "The surcharge has been successfully made! Current salary for this employee after bonus:"+workerSalary+"som;";
         }
         else if(getchoice.equals("7")){
             System.out.print("Enter the name of the employee whose salary you want to reduce:");
@@ -111,7 +111,7 @@ public class Director {
                 int reduceSalary = Integer.valueOf(reducedSalary);
                 workerSalary = workerSalary-reduceSalary;
             }
-            choice = "Salary reduction successfully completed! Current salary for this employee after salary cut:";
+            choice = "Salary reduction successfully completed! Current salary for this employee after salary cut:"+workerSalary+"som;";
         }
         else if(getchoice.equals("8")){
             choice = "The program is over, we look forward to your return!";
