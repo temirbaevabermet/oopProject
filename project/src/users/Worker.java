@@ -22,8 +22,7 @@ public class Worker {
         String getchoice = scanner.next();
        WorkerList workerList = new WorkerList();
         if(getchoice.equals("1")){
-            String works = workerList.works();
-            choice = works;
+            choice = workerList.works();
         }
         else if(getchoice.equals("2")){
             System.out.print("Please write down the task you are going to do:");

@@ -21,24 +21,13 @@ public class SaleManager {
         String numberRequest = "Please dial the menu number to work with the program:";
         System.out.print(numberRequest);
         String getchoice = scanner.next();
+        SaleManagerList saleManagerList = new SaleManagerList();
         if(getchoice.equals("1")){
-            choice = "1.Dylan Diaz\n" +
-                    "2.Junaid Stewart\n" +
-                    "3.Trey Osborn\n" +
-                    "4.Julius Black\n" +
-                    "5.Amie Arias\n" +
-                    "6.Sofia Zuniga\n" +
-                    "7.Jorge Vincent\n" +
-                    "8.Sonny Hughes\n" +
-                    "9.Hussein Henry\n" +
-                    "10.Iestyn Cole";
+            choice = saleManagerList.client();
         }
         else if(getchoice.equals("2")){
-            System.out.print("Enter the client surname to search:");
-            String clientSurnameRequest = scanner.next();
-            System.out.print("Enter the client name to search:");
-            String clientNameRequest = scanner.next();
-            choice = "The client was found:"+clientSurnameRequest+" "+clientNameRequest;
+
+            choice = saleManagerList.clientName();
         }
         else if(getchoice.equals("3")){
             choice = "There are available trips to: South Korea, the USA, Thailand, Italy, Germany, Russia;";
