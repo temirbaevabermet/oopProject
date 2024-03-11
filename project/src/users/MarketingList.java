@@ -21,7 +21,7 @@ public class MarketingList {
         else if(chooseCategory.equals("3")){
             userChoice = "Outdoor advertising(budget): 30k som;";
         }
-        else if(chooseCategory.equals("2.4")){
+        else if(chooseCategory.equals("4")){
             userChoice = "Internet advertising(budget): 20k som;";
         }
         return userChoice;
