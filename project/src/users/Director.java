@@ -1,5 +1,9 @@
 package users;
 
+import Lists.DirectorList;
+import Lists.ManagerList;
+import Lists.MarketingList;
+
 import java.util.Scanner;
 
 public class Director {
@@ -24,6 +28,7 @@ public class Director {
         String numberRequest = "Please dial the menu number to work with the program:";
         System.out.print(numberRequest);
         String getchoice = scanner.next();
+
         if(getchoice.equals("1")){
             ManagerList managerList = new ManagerList();
             choice = managerList.coverageArea();

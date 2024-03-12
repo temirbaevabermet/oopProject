@@ -1,5 +1,7 @@
 package users;
 
+import Lists.SaleManagerList;
+
 import java.util.Scanner;
 
 public class SaleManager {

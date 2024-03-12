@@ -1,11 +1,12 @@
 package users;
 
-import java.util.ArrayList;
+import Lists.WorkerList;
+
 import java.util.Scanner;
 
 public class Worker {
     Scanner scanner = new Scanner(System.in);
-    String doneTasks = "null";
+    public String doneTasks = "null";
     public String greetings = "Greetings dear, Employee Egor!\n" +
             "Please dial the menu number to work with the program, if you are finished, then dial 5:";
     public void menu(){

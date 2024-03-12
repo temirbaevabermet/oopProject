@@ -1,11 +1,13 @@
 package users;
 
+import Lists.MarketingList;
+
 import java.util.Scanner;
 
 public class Marketing {
     Scanner scanner = new Scanner(System.in);
 
-    int marketBudget = 150000;
+    public int marketBudget = 150000;
     public String greetings = "Greetings dear Marketer!\n" +
             "Please dial the menu number to work with the program, if you are finished, then dial 5:";
 

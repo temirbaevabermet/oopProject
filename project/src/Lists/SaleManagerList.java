@@ -1,4 +1,6 @@
-package users;
+package Lists;
+
+import users.SaleManager;
 
 import java.util.ArrayList;
 import java.util.Scanner;

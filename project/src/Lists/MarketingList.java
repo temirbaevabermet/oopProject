@@ -1,4 +1,6 @@
-package users;
+package Lists;
+
+import users.Marketing;
 
 import java.util.Scanner;
 

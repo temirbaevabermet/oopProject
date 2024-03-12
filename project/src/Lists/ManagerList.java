@@ -1,4 +1,4 @@
-package users;
+package Lists;
 
 import java.util.Scanner;
 

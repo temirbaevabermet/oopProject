@@ -1,4 +1,6 @@
-package users;
+package Lists;
+
+import users.Worker;
 
 import java.util.ArrayList;
 import java.util.Scanner;

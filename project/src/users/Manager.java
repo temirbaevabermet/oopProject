@@ -1,5 +1,7 @@
 package users;
 
+import Lists.ManagerList;
+
 import java.util.Scanner;
 
 public class Manager {
